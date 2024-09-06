@@ -8,11 +8,6 @@ interface HeaderProps {
   className?: string;
 }
 
-const poppins = Poppins({
-  subsets: ['latin'],
-  weight: ['400','600','700'], // Add desired weights
-  style: ['normal', 'italic'], // Add desired styles
-});
 
 const Header: React.FC<HeaderProps> = ({ className })=> {
   return (
@@ -25,7 +20,7 @@ const Header: React.FC<HeaderProps> = ({ className })=> {
       </span>
     </h3>
 
-    <div className={`${poppins.className} flex text-[14px] text-white font-normal items-center absolute right-0`}>
+    <div className={`font-poppins flex text-[14px] text-white font-normal items-center absolute right-0`}>
       <h5>English</h5>
       <Image
         src={down}

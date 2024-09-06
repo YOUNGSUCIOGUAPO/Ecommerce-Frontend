@@ -7,18 +7,9 @@ import RightArrow from '/public/assets/Right-Arrow.svg'
 import LeftArrow from '/public/assets/Left-Arrow.svg'
 import IconCard from './IconCard';
 
-const poppins = Poppins({
-    subsets: ['latin'],
-    weight: '600',
-  });
-  
-  const inter = Inter({
-    subsets: ['latin'],
-    weight: '600',
-  });
 
 const CategorySection = () => {
-    const carouselRef = useRef<HTMLDivElement | null>(null);
+  const carouselRef = useRef<HTMLDivElement | null>(null);
 
   const handleScrollLeft = () => {
     if (carouselRef.current) {
@@ -35,12 +26,12 @@ const CategorySection = () => {
     <section className='categorySection mt-[80px]'>
         <div className='flex px-[5%]'>
         <div className='w-[20px] h-[40px] bg-[#DB4444] rounded-[4px]'></div>
-        <h4 className={`${poppins.className} ml-[16px] align-content-center text-[#DB4444] text-[16px]`}>
+        <h4 className={`font-poppins ml-[16px] align-content-center text-[#DB4444] text-[16px]`}>
             Categories
         </h4>
       </div>
       <div className='flex px-[5%] mb-[60px]'>
-        <h2 className={`${inter.className} text-[36px] mt-[24px] mr-[87px]`}>
+        <h2 className={`font-inter text-[36px] mt-[24px] mr-[87px]`}>
           Browse By Categories
         </h2>
 

@@ -19,9 +19,16 @@ interface ProductType {
   discountedPercent?: string;
 }
 
-const Card: React.FC<{ product: ProductType }> = ({ product }) => {
-  // ... rest of the code
 
+const titleBreaker = (title: string) => {
+  // Your implementation here
+  if (title.length > 26){
+    return `${title.slice(0, 26)}...`;
+  }else {
+    return title;
+  }
+};
+const Card: React.FC<{ product: ProductType }> = ({ product }) => {
   return (
     <div className='w-[270px] h-[350px] flex flex-col'>
       <div className='card-image mb-[16px] relative rounded-[4px]'>
@@ -34,7 +41,7 @@ const Card: React.FC<{ product: ProductType }> = ({ product }) => {
           <Image src={fill_eye} width={34} height={34} alt='' />
         </div>
         <div className='image-container'>
-          <Image src={product.image} width={190} height={180} className='image' alt='' />
+          <Image src={product.image} fill className='image' alt='' />
         </div>
 
         {/* Hover Effect */}
@@ -43,8 +50,8 @@ const Card: React.FC<{ product: ProductType }> = ({ product }) => {
         </div>
       </div>
 
-      <div className='card-text'>
-        <h2 className='card-title'>{product.title}</h2>
+      <div className='card-text max-h-[48px]'>
+        <h2 className='card-title'>{titleBreaker(product.title)}</h2>
         <div className='card-pricing'>
           <span className='price'>{`$${product.price}`}</span>
           <span className='old-price'>{product.oldPrice}</span>

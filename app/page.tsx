@@ -8,15 +8,11 @@ import BillboardSection from "@/components/BillboardSection";
 import ProductSection from "@/components/ProductSection";
 import FeaturedSection from "@/components/FeaturedSection";
 
-const poppins = Poppins({
-  subsets: ['latin'],
-  weight: ['400', '700'], // Add desired weights
-  style: ['normal', 'italic'], // Add desired styles
-});
+
 
 export default function Home() {
   return (
-    <main className={`${poppins.className}`}>
+    <main className='font-poppins'>
     <Head>
         <title>My Website</title>
         <link

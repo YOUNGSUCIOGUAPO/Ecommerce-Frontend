@@ -22,16 +22,6 @@ interface Product {
   // discountedPercent?: string;
 }
 
-const poppins = Poppins({
-  subsets: ['latin'],
-  weight: '600',
-});
-
-const inter = Inter({
-  subsets: ['latin'],
-  weight: '600',
-});
-
 const ProductSection = () => {
   const router = useRouter();
 
@@ -88,12 +78,12 @@ const ProductSection = () => {
     <section id='todaySection' className='mt-[140px] w-full'>
       <div className='flex px-[5%]'>
         <div className='w-[20px] h-[40px] bg-[#DB4444] rounded-[4px]'></div>
-        <h4 className={`${poppins.className} ml-[16px] align-content-center text-[#DB4444] text-[16px]`}>
+        <h4 className={`font-poppins ml-[16px] align-content-center text-[#DB4444] text-[16px]`}>
           Our Products
         </h4>
       </div>
       <div className='flex px-[5%] mb-[40px]'>
-        <h2 className={`${inter.className} text-[36px] mt-[24px] mr-[87px]`}>
+        <h2 className={`font-inter text-[36px] mt-[24px] mr-[87px]`}>
           Explore Our Products
         </h2>
         <div className='ml-auto space-x-2'>

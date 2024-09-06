@@ -5,27 +5,17 @@ import icon1 from '/public/assets/servicesLogo.svg'
 import icon2 from '/public/assets/Gaurantee.svg'
 import icon3 from '/public/assets/Services.svg'
 
-const poppins = Poppins({
-  subsets: ['latin'],
-  weight: '600',
-});
-
-const inter = Inter({
-  subsets: ['latin'],
-  weight: '600',
-});
-
 const FeaturedSection = () => {
   return (
     <section id='todaySection' className='featured-section mb-[140px]'>
       <div className='section-header'>
         <div className='section-icon'></div>
-        <h4 className={`section-subtitle ${poppins.className}`}>
+        <h4 className={`section-subtitle font-poppins`}>
             Featured
         </h4>
       </div>
       <div className='section-title'>
-        <h2 className={`title-text ${inter.className}`}>
+        <h2 className={`title-text font-inter`}>
           New Arrival
         </h2>
       </div>

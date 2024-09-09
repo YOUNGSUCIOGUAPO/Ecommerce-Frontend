@@ -9,6 +9,7 @@ import Footer from "@/components/Footer";
 // import StoreProvider from "@/store/StoreProvider";
 import React, { ReactNode } from "react";
 import type { Metadata } from "next";
+import { CartProvider } from "./context/ContextApp";
 
 
 export const metadata: Metadata = {
@@ -36,10 +37,13 @@ export default function RootLayout({
         ></Script>
 
         <body className={`font-inter overflow-x-hidden`}>
-          <Header className='font-poppins' />
-          <Nav />
-          {children}
-          <Footer />
+         <CartProvider> 
+             <Header className='font-poppins' />
+              <Nav />
+             {children}
+               <Footer />
+          </CartProvider> 
+      
         </body>
       </html>
   );

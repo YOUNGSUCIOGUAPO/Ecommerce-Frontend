@@ -1,9 +1,9 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import Button from "../components/Button";
-import DropUp from "../public/assets/images/Drop-Up-Small.svg";
-import DropDown from "../public/assets/images/Drop-Down-Small.svg";
-import cartIcon from "../public/assets/images/Cart1.svg";
+import DropUp from "../public/assets/Drop-Up-Small.svg";
+import DropDown from "../public/assets/Drop-Down-Small.svg";
+import cartIcon from "../public/assets/Cart1.svg";
 import Image from "next/image";
 import { useCustomContext } from "./context/ContextApp";
 import { useRouter } from "next/navigation";

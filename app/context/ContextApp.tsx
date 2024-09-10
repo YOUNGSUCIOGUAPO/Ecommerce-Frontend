@@ -34,7 +34,7 @@ const CartContext = createContext<CartContextType | null>(null);
 
 // Create a CartProvider component
 export const CartProvider: React.FC<CartProviderProps> = ({ children }) => {
-  const cart_id = "dec1fa8c-aad3-42e5-af47-8f1647ee10ae"
+  const cart_id = "68134f7b-9dc0-4081-a3ce-43ce68831fa7"
   const [totalQuantity, setTotalQuantity] = useState<number|null>(null)
   const [products, setProducts] = useState<Product[]>([]);
   const [cart, setCart] = useState<Product[]>([]);
